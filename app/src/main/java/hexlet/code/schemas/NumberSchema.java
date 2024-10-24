@@ -1,6 +1,6 @@
 package hexlet.code.schemas;
 
-public class NumberSchema extends BaseSchema<Integer>{
+public class NumberSchema extends BaseSchema<Integer> {
     public boolean isRequired = false;
     private boolean isPositive = false;
     private Integer startNumber = null;
@@ -17,9 +17,9 @@ public class NumberSchema extends BaseSchema<Integer>{
 
     }
 
-    public NumberSchema range(int startNumber, int endNumber) {
-        this.startNumber = startNumber;
-        this.endNumber = endNumber;
+    public NumberSchema range(int startNumberValue, int endNumberValue) {
+        this.startNumber = startNumberValue;
+        this.endNumber = endNumberValue;
         return this;
     }
 

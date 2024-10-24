@@ -12,14 +12,14 @@ public class MapSchema extends BaseSchema<Map<String, String>> {
         return this;
     }
 
-    public MapSchema sizeof(int size) {
-        this.size = size;
+    public MapSchema sizeof(int sizeValue) {
+        this.size = sizeValue;
         return this;
 
     }
 
-    public MapSchema shape(Map<String, BaseSchema<String>> schemas) {
-        this.schemas = schemas;
+    public MapSchema shape(Map<String, BaseSchema<String>> mapSchemas) {
+        this.schemas = mapSchemas;
         return this;
     }
 
@@ -43,7 +43,7 @@ public class MapSchema extends BaseSchema<Map<String, String>> {
                 return false;
             }
             if (schemaKey != null && !schemaKey.isValid(entry.getValue())) {
-                    return false;
+                return false;
             }
         }
         return true;
