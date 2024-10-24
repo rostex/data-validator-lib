@@ -1,3 +1,9 @@
+### Статус кода:
+[![Actions Status](https://github.com/rostex/java-project-78/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/rostex/java-project-78/actions)
+[![rostex check](https://github.com/rostex/java-project-78/actions/workflows/main.yml/badge.svg)](https://github.com/rostex/java-project-78/actions/workflows/main.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/b1079416027acb70e369/maintainability)](https://codeclimate.com/github/rostex/java-project-78/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/b1079416027acb70e369/test_coverage)](https://codeclimate.com/github/rostex/java-project-78/test_coverage)
+
 ## Валидатор данных
 Валидатор данных – библиотека, которая помогает проверять правильность данных. Она предлагает простые правила для проверки, что делает интеграцию в проекты легкой и удобной. Библиотека поддерживает разные форматы и типы данных. При необходимости структра библиотеки позволяет добавлять собственные условия для проверки.
 
@@ -34,9 +40,3 @@ human2.put("firstName", "Anna");
 human2.put("lastName", "B");
 schema.isValid(human2); // false
 ```
-
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/rostex/java-project-78/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/rostex/java-project-78/actions)
-[![rostex check](https://github.com/rostex/java-project-78/actions/workflows/main.yml/badge.svg)](https://github.com/rostex/java-project-78/actions/workflows/main.yml)
-[![Maintainability](https://api.codeclimate.com/v1/badges/b1079416027acb70e369/maintainability)](https://codeclimate.com/github/rostex/java-project-78/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/b1079416027acb70e369/test_coverage)](https://codeclimate.com/github/rostex/java-project-78/test_coverage)
