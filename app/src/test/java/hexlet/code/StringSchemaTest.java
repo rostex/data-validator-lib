@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class StringSchemaTest {
-    Validator v = new Validator();
-    StringSchema schema = v.string();
+    private Validator v = new Validator();
+    private StringSchema schema = v.string();
 
     @Test
     public void testSchema1() {
@@ -30,7 +30,7 @@ public class StringSchemaTest {
 
     @Test
     public void testSchema2() {
-        var schema1 = v.string();
+        StringSchema schema1 = v.string();
         assertTrue(schema1.minLength(10).minLength(4).isValid("Hexlet"));
     }
 }

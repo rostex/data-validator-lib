@@ -11,10 +11,10 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class MapSchemaTest {
-    Validator v = new Validator();
-    MapSchema schema1 = v.map();
-    MapSchema schema2 = v.map();
-    Map<String, BaseSchema<String>> schemas = new HashMap<>();
+    private Validator v = new Validator();
+    private MapSchema schema1 = v.map();
+    private MapSchema schema2 = v.map();
+    private Map<String, BaseSchema<String>> schemas = new HashMap<>();
 
     @Test
     public void testMapSchema() {

@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class BaseSchema<T> {
-    public List<Predicate<T>> rules = new ArrayList<>();
-    public boolean isRequired = false;
+public abstract class BaseSchema<T> {
+    protected List<Predicate<T>> rules = new ArrayList<>();
+    protected boolean isRequired = false;
 
     public boolean isValid(T value) {
         if (value == null || value.toString().isEmpty()) {
