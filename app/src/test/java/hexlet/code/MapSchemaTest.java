@@ -39,7 +39,7 @@ public class MapSchemaTest {
     public void testMapSchemaWithShape() {
 
         schemas.put("firstName", v.string().required());
-        schemas.put("lastName", v.string().minLength(2).required());
+        schemas.put("lastName", v.string().required().minLength(2));
 
         schema2.shape(schemas);
 
