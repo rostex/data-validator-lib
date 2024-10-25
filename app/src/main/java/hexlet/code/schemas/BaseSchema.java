@@ -8,11 +8,6 @@ public class BaseSchema<T> {
     public List<Predicate<T>> rules = new ArrayList<>();
     public boolean isRequired = false;
 
-    public BaseSchema<T> required() {
-        this.isRequired = true;
-        return this;
-    }
-
     public boolean isValid(T value) {
         if (value == null || value.toString().isEmpty()) {
             return !isRequired;
